@@ -21,7 +21,7 @@ The command line automatic installer prompts for all the configuration settings,
 ## Installation
 
 ```bash
-git clone git@github.com:hedii/github-release-notifier.git
+git clone https://github.com/hedii/github-release-notifier.git
 cd github-release-notifier && composer install
 php artisan github:install
 ```
