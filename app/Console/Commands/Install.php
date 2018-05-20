@@ -140,7 +140,8 @@ class Install extends Command
             'MAIL_PORT' => $this->ask('What is the SMTP port?', '2525'),
             'MAIL_USERNAME' => $this->ask('What is the SMTP username?', 'null'),
             'MAIL_PASSWORD' => $this->askHiddenWithDefault('What is the SMTP password?'),
-            'MAIL_ENCRYPTION' => $this->choice('What is the SMTP encryption?', ['null', 'ssl', 'tls'], 0)
+            'MAIL_ENCRYPTION' => $this->choice('What is the SMTP encryption?', ['null', 'ssl', 'tls'], 0),
+            'MAIL_FROM_ADDRESS' => $this->ask('From which address the email will be sent?')
         ];
     }
 
